@@ -1,0 +1,12 @@
+
+<button (click)="toggleDisplay()">New thought</button>
+<div *ngIf="display">
+  <h2>Create A New Post</h2>
+
+  <p>Enter a title:</p>
+  <input type="text" [(ngModel)]="newPost.title" />
+  <p>Enter a thought:</p>
+  <input type="text" [(ngModel)]="newPost.thought" />
+  <br />
+  <button (click)="AddPost()">Add Post</button>
+</div>
